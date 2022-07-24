@@ -1,0 +1,19 @@
+$break: 32rem;
+
+body {
+	font-family: sans-serif;
+
+	@media(min-width: $break) {
+		font-size: 24px;
+	}
+}
+
+form {
+	label {
+		display: block;
+
+		span {
+			display: block;
+		}
+	}
+}
