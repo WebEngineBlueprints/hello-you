@@ -1,9 +1,9 @@
 <?php
-use Gt\DomTemplate\DocumentBinder;
+use Gt\DomTemplate\Binder;
 use Gt\Input\Input;
 use Gt\Session\Session;
 
-function go(Session $session, DocumentBinder $binder):void {
+function go(Session $session, Binder $binder):void {
 	if($name = $session->getString("name")) {
 		$binder->bindKeyValue("your-name", $name);
 	}

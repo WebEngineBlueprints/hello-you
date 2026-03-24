@@ -4,7 +4,6 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<title>Hello, {{your-name}}!</title>
-	<link rel="stylesheet" href="/style.css" />
 </head>
 <body>
 	<h1>Hello, <span data-bind:text="your-name">you</span>!</h1>
@@ -12,16 +11,14 @@
 	<form method="post">
 		<label>
 			<span>What is your name?</span>
-			<input name="your-name" required autocomplete="off" />
+			<input name="your-name" required autocomplete="off" autofocus />
 		</label>
 
 		<button name="do" value="greet">Greet!</button>
-	</form>
 
-	<br /><br />
+		<br />
 
-	<form method="post">
-		<button name="do" value="reset">Reset</button>
+		<button name="do" value="reset" formnovalidate>Reset</button>
 	</form>
 </body>
 </html>
